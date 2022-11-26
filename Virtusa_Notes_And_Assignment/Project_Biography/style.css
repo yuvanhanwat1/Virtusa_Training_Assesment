@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(224, 197, 232);
+}
+#container{
+    background-color: white;
+    border: 2px solid black;
+}
+header{
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 0;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+#body{
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+#profile{
+    float: left;
+    width: auto;
+    border: 2px solid black;
+    padding: 5px;
+    overflow:hidden;
+}
+#profile h3{
+    text-align: center;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    width: auto;
+}
+#profile img{
+    /* margin-left: 25px; */
+    border: 3px solid black;
+    width: auto;
+}
+.box1{
+    /* border: 2px solid black; */
+    overflow: hidden;
+    display:block;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.box2{
+    border: 2px solid black;
+    overflow:visible;
+    display:inline-block;
+    padding: 5px;
+}
+.box2 h3{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.box2 h3:hover{
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+bio{
+    padding: 10px;
+    float: right;
+    width: 65%;
+
+}
+footer{
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: right;
+}
+p{
+    text-indent: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul{
+    list-style-type: none;
+    padding: 5px;
+}
+#bio h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container header:hover{
+    background-color: red;
+    /* color: black; */
+}
+#profile h3:hover{
+    background-color: red;
+}
+
+@media screen and (max-width:400px){
+    .box1{
+        display: inline-block;
+    }
+    #profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    }
+    #profile h3{
+        text-align: center;
+        padding: 0px;
+        background-color: black;
+        color: white;
+        width:auto;
+    }
+    .box1{
+        border: 2px solid black; 
+    }
+    .image_{
+        width: 100%;
+    }
+}
+@media screen and (max-width:624px) and (min-width:150px){
+    #profile img{
+        width:100px;
+        height: 100px;
+    }
+}
